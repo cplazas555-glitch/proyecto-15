@@ -1,0 +1,93 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c1c1c1;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 550px;
+    margin: 40px auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color:#000000
+}
+
+.progreso {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.barra {
+    flex: 1;
+    height: 15px;
+    background-color: #dddddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.relleno {
+    height: 100%;
+    width: 5%;
+    background-color: #000000;
+}
+
+.tarjeta {
+    min-height: 250px;
+    background-color: white;
+    border: 10px solid #000000;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    text-align: center;
+}
+
+
+.botones {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff0800;
+}
+
+@media (max-width: 480px) {
+    .botones {
+        flex-wrap: wrap;
+    }
+
+    button {
+        flex: 1;
+    }
+}
+.respuesta-activa{
+    background-color: #000000;
+    color: white;
+    border: 10px solid #f8f8f9;
+
+}
